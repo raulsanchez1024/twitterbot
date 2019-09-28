@@ -35,7 +35,7 @@ class TwitterBot:
         bot.get(link)
         try:
           time.sleep(5)
-          bot.find_element_by_class_name('css-18t94o4 css-1dbjc4n r-1777fci r-11cpok1 r-1ny4l3l r-bztko3 r-lrvibr').click()
+          bot.find_element_by_xpath("//div[@aria-label='Like']").click()
           time.sleep(10)
         except Exception as ex:
           print('Something went wrong')
